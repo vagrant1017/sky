@@ -1,18 +1,60 @@
 <view>
   <list>
-    <input-item
-      data-field="classify"
-      placeholder="请选择"
-      classify
+    <!-- 经营品类 -->
+    <picker-item
+      data-field="classfiy"
+      
+      onPickerTap="onClassfiySelect"
     >
       经营品类
-    </input-item>
+    </picker-item>
+
+    <!-- 店铺门头执照 -->
     <picker-item
       data-field="shop"
-      value="{{bank}}"
-      onPickerTap="onSelect"
+      
+      onPickerTap="onShopSelect"
     >
       店铺门头执照
     </picker-item>
+
+     <!-- 营业执照 -->
+    <picker-item
+      data-field="Business"
+      
+      onPickerTap="onBusinessSelect"
+    >
+      营业执照（可选填）
+    </picker-item>
+
+    <!-- 联系人 -->
+    <input-item
+      value="{{linkman}}"
+      type="text"
+    >
+      联系人
+    </input-item>
+
+    <!-- 手机号 -->
+    <input-item
+      value="{{phone}}"
+      type="number"
+    >
+       手机号
+    </input-item>
+
+    <!-- 电子邮箱 -->
+    <input-item
+      value="{{email}}"
+      type="text"
+      placeholder=" 用于支付宝联系与审核通知"
+    >
+      电子邮箱
+    </input-item>
   </list>
+
+  <!-- 提交 -->
+  <view class="submit">
+      <button size="default" type="primary" onTap="submit">提交</button>
+</view>
 </view>
