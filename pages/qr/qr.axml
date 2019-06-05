@@ -1,0 +1,8 @@
+<view class="container">
+
+
+<view class="qr">
+  <image src="//qr.api.cli.im/qr?data=http%253A%252F%252Fwww.theyoungteam.cn&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=&size=260&kid=cliim&key=d296a545d441e1efc7aa57005824333d"/>
+</view>
+
+</view>

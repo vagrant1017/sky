@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/setting/setting",
+    "pages/card/card",
+    "pages/creatshop/creatshop",
+    "pages/shop/cart/cart",
+    "pages/shop/mine/mine",
+    "pages/shop/home/home",
+    "pages/connect/connect",
+    "pages/qr/qr",
+    "pages/index/outurl/outurl",
+    "pages/uploadingShop/uploadingShop"
+  ],
+  "window": {
+    "defaultTitle": "云商sky蓬管家",
+    "titleBarColor": "#00A1E9",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "textColor": "#707070",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/shop/home/home",
+        "name": "主页",
+        "icon": "image/tab_home.png",
+        "activeIcon": "image/tab_home_s.png"
+      },
+      {
+        "pagePath": "pages/shop/cart/cart",
+        "name": "购物车",
+        "icon": "image/cart.png",
+        "activeIcon": "image/cart-s.png"
+      },
+      {
+        "pagePath": "pages/shop/mine/mine",
+        "name": "我的",
+        "icon": "image/mine.png",
+        "activeIcon": "image/mine-s.png"
+      }
+    ]
+  }
+}

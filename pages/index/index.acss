@@ -1,0 +1,47 @@
+.box{
+  width: 100%;
+}
+.header{
+  width: 100%;
+  height: 324rpx;
+  /* background:url("https://mdn.alipay.com/wsdk/img?fileid=A*yw5LRadfEyYAAAAAAAAAAABjAfYuAQ&bz=life_app&zoom=1992w_480h_80q_1l") no-repeat center center; */
+  background: #00A1E9;
+  background-blend-mode: darken;
+  /* opacity: .5; */
+  position: relative;
+}
+.tubiao{
+  width: 100rpx;height: 50rpx;
+  position: absolute;right: 20rpx;top:20rpx;
+}
+
+.qr{
+  float: left;margin-left: 20rpx;
+}
+/* .am-icon:nth-child(1){
+  margin-right: 30rpx!important;
+} */
+.card{
+  color: white;width:138rpx;text-align: center;line-height: 50rpx;
+  height:50rpx;font-size:20rpx;position: absolute;right: 0rpx;top:120rpx;
+  background:rgba(102,192,242,1);
+  border-radius:25px 0px 0px 25px;padding-left: 30rpx;
+}
+.info{
+  position: relative;float: left
+}
+.avatar{
+  width: 140rpx;height: 140rpx;margin-left: 30rpx;margin-top: 100rpx;border-radius: 100%;
+}
+.nickname{
+  color: white;bottom: 100rpx;position: relative;left: 50rpx;
+}
+
+.creatShop{
+  width:98%;height: 100rpx;text-align: center;margin: 0 auto;margin-top: 20rpx;
+
+}
+.showImage{
+  width: 100%;height:150rpx;background: url("https://mdn.alipay.com/wsdk/img?fileid=A*yw5LRadfEyYAAAAAAAAAAABjAfYuAQ&bz=life_app&zoom=1992w_480h_80q_1l");
+  background-size: cover
+}

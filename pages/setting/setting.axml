@@ -1,0 +1,35 @@
+<!-- 用户未登录的时候显示 -->
+<!-- <view class="login-block" hidden="{{userLogin}}">
+    <view class="btn-login" onTap="login">请登录
+      <button a:if="{{canIUseAuthButton}}" open-type="getAuthorize" 
+      onGetAuthorize="onGetAuthorize" onError="onAuthError" 
+      scope='phoneNumber'>
+          授权手机号
+      </button>
+    </view>
+</view> -->
+
+<!-- 个人信息 用户已登录后显示 -->
+<!-- <view class="userinfo" hidden="{{userNotLogin}}">
+    <image class="avatar" src="{{userInfo.faceImage}}"></image>
+    <view class="user-words">
+        <view class="nickname">{{userInfo.nickname}}</view>
+        <view class="ico-block">
+            <image src="/image/vip.png" class="vipcard-ico"/>
+            <block a:if="{{userInfo.isCertified == 1}}">
+                <image src="/image/certified.png" class="certified-ico"/>
+            </block>    
+        </view>
+    </view>
+    <image class="set-ico" src="/image/settings.png" onTap="logout"></image>
+</view> -->
+
+
+
+<view>
+ <card thumb="/image/address.png" title="地址管理"  />
+
+ <card thumb="/image/kefu.png" title="联系客服"/>
+
+ <card thumb="/image/setting.png" title="账号及安全"/>
+</view>

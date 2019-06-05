@@ -1,0 +1,18 @@
+<view>
+  <list>
+    <input-item
+      data-field="classify"
+      placeholder="请选择"
+      classify
+    >
+      经营品类
+    </input-item>
+    <picker-item
+      data-field="shop"
+      value="{{bank}}"
+      onPickerTap="onSelect"
+    >
+      店铺门头执照
+    </picker-item>
+  </list>
+</view>

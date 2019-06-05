@@ -1,0 +1,46 @@
+<!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
+<favorite>收藏小程序，下次使用更方便</favorite>
+
+
+<view class="header">
+    <view class="tubiao">
+      
+      
+      <navigator url="/pages/qr/qr"><am-icon class="qr" type="qrcode" size="{{24}}" color="white" /></navigator>
+      
+     </view>
+    <view class="card">
+        <text class="card-text" onTap="goCard">我的名片</text>
+        <am-icon type="arrow-right" size="{{10}}" color="white" />
+      </view>
+
+    <view class="info">
+      <image src="{{avatar}}" class="avatar"></image>
+      <text class="nickname">{{nickName}}</text>
+    </view>
+
+    
+  </view>
+
+<grid onGridItemClick="onItemClick" columnNum="{{4}}" list="{{list}}" />
+
+<view class="showImage" >
+  
+</view>
+
+
+    <block>
+      <list-item arrow="‘true">
+        店铺1
+      </list-item>
+      <list-item arrow="‘true">
+        店铺2
+      </list-item>
+      <list-item arrow="‘true">
+        店铺3
+      </list-item>
+    </block>
+
+<view class="creatShop">
+      <button size="default" type="primary" onTap="creatShop">我要开店</button>
+</view>

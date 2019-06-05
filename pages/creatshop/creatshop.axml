@@ -1,0 +1,7 @@
+<!-- <image src="/image/dangmianfu.jpg"/ class="img"> -->
+<view class="img">
+
+</view>
+<view class="creatShop">
+      <button size="default" type="primary" onTap="uploadingShop">立即签约</button>
+</view>

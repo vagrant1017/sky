@@ -1,0 +1,3 @@
+<!-- axml -->
+<!-- 指向支付宝首页的web-view -->
+<web-view src="https://www.dch606101b.cn/pay/order/126273" onMessage="test"></web-view>
