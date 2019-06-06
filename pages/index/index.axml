@@ -9,10 +9,10 @@
       <navigator url="/pages/qr/qr"><am-icon class="qr" type="qrcode" size="{{24}}" color="white" /></navigator>
       
      </view>
-    <view class="card">
+    <!-- <view class="card">
         <text class="card-text" onTap="goCard">我的名片</text>
         <am-icon type="arrow-right" size="{{10}}" color="white" />
-      </view>
+      </view> -->
 
     <view class="info">
       <image src="{{avatar}}" class="avatar"></image>
@@ -22,7 +22,7 @@
     
   </view>
 
-<grid onGridItemClick="onItemClick" columnNum="{{4}}" list="{{list}}" />
+<!-- <grid onGridItemClick="onItemClick" columnNum="{{4}}" list="{{list}}" /> -->
 
 <view class="showImage" >
   
@@ -30,17 +30,20 @@
 
 
     <block>
-      <list-item arrow="‘true">
+      <button catchTap="goShop">
         店铺1
-      </list-item>
-      <list-item arrow="‘true">
-        店铺2
-      </list-item>
-      <list-item arrow="‘true">
-        店铺3
-      </list-item>
+      </button>
+     
     </block>
 
-<view class="creatShop">
+<!-- <view class="creatShop">
       <button size="default" type="primary" onTap="creatShop">我要开店</button>
+</view> -->
+
+
+
+<view class="bar">
+  
+  <button>个人中心</button>
+  <button onTap="ruzhu">我要入驻</button>
 </view>

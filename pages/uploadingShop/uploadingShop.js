@@ -29,8 +29,8 @@ Page({
   },
 
   submit(){
-    my.switchTab({
-      url:'/pages/shop/home/home'
-    });
+    // my.switchTab({
+    //   url:'/pages/shop/home/home'
+    // });
   }
 });

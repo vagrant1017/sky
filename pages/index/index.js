@@ -28,36 +28,36 @@ Page({
     ],
    
   },
-  onItemClick(ev) {
-    var index = ev.detail.index
+  // onItemClick(ev) {
+  //   var index = ev.detail.index
     
-    switch(index) {
-      case 0:
-        my.navigateTo({
-          url: '/pages/index/outurl/outurl'
-        })
+  //   switch(index) {
+  //     case 0:
+  //       my.navigateTo({
+  //         url: '/pages/index/outurl/outurl'
+  //       })
          
-          break;
-      case 1:
-          my.switchTab({
-            url: '/pages/shop/home/home'
-          })
-          break;
-      case 2:
-          my.alert({
-          title: '亲',
-          content: '暂时无此服务'
-        });
-          break;
-      case 3:
-          my.alert({
-          title: '亲',
-          content: '联系电话18627809978'
-        });
-          break;
+  //         break;
+  //     case 1:
+  //         my.switchTab({
+  //           url: '/pages/shop/home/home'
+  //         })
+  //         break;
+  //     case 2:
+  //         my.alert({
+  //         title: '亲',
+  //         content: '暂时无此服务'
+  //       });
+  //         break;
+  //     case 3:
+  //         my.alert({
+  //         title: '亲',
+  //         content: '联系电话18627809978'
+  //       });
+  //         break;
      
-    } 
-  },
+  //   } 
+  // },
 
  
    onLoad(query) {
@@ -99,12 +99,16 @@ Page({
       },
     });
   },
-  creatShop(){
+  ruzhu(){
       my.navigateTo({
       url: '/pages/creatshop/creatshop'
     })
   },
-   
+   goShop(){
+    my.switchTab({
+      url:'/pages/shop/home/home'
+    });
+  },
   onShow() {
     // 页面显示
     
