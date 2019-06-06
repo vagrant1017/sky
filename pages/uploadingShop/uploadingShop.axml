@@ -1,3 +1,4 @@
+
 <view>
   <list>
     <!-- 经营品类 -->
@@ -10,22 +11,40 @@
     </picker-item>
 
     <!-- 店铺门头执照 -->
-    <picker-item
+    <!-- <picker-item
       data-field="shop"
       
       onPickerTap="onShopSelect"
     >
       店铺门头执照
-    </picker-item>
+    </picker-item> -->
+    <list>
+      <list-item>店铺门头执照
+      </list-item>
+    </list>
+
+    <view class="shop" onTap="onShopSelect">
+      <image src="/image/add.png"/>
+      <text class="addP1">上传含店名的门头照</text>
+    </view>
 
      <!-- 营业执照 -->
-    <picker-item
+    <!-- <picker-item
       data-field="Business"
       
       onPickerTap="onBusinessSelect"
     >
       营业执照（可选填）
-    </picker-item>
+    </picker-item> -->
+    <list>
+      <list-item>营业执照（可选填）
+      </list-item>
+    </list>
+    <view class="shop" onTap="onBusinessSelect">
+      <image src="/image/add.png"/>
+      <text class="addP2">上传照片</text>
+    </view>
+
 
     <!-- 联系人 -->
     <input-item

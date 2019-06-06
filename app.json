@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/uploadingShop/uploadingShop",
     "pages/index/index",
     "pages/setting/setting",
     "pages/card/card",
@@ -9,8 +10,8 @@
     "pages/shop/home/home",
     "pages/connect/connect",
     "pages/qr/qr",
-    "pages/index/outurl/outurl",
-    "pages/uploadingShop/uploadingShop"
+    "pages/index/outurl/outurl"
+    
   ],
   "window": {
     "defaultTitle": "云商sky蓬管家",
