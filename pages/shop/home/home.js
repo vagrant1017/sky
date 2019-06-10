@@ -1,64 +1,25 @@
 Page({
   data: {
-    activeTab: 0,
-    tabs: [
-      { title: '选项一', anchor: 'a'},
-      { title: '选项二', anchor: 'b'},
-      { title: '选项三', anchor: 'c' },
-      { title: '选项四', anchor: 'd' },
-      { title: '选项五', anchor: 'e' },
-      { title: '选项六', anchor: 'f' },
-    ],
+    hasLocation:false,
+    location:{}
   },
-  handleChange(index) {
-    this.setData({
-      activeTab: index,
-    });
+  onReady(){
+    my.getLocation({
+      success(res) {
+        my.hideLoading();
+        console.log(res)
+        this.setData({
+          hasLocation: true,
+          location: formatLocation(res.longitude, res.latitude)
+        })
+      },
+      fail() {
+        my.hideLoading();
+        my.alert({ title: '定位失败' });
+      },
+    })
   },
-  onChange(index) {
-   
-    this.setData({
-      activeTab: index,
-    });
+  onLoad() {
+    
   },
 });
-
-// var app = getApp()
-// Page({
-//     data: {
-//         navLeftItems: [],
-//         navRightItems: [],
-//         curNav: 1,
-// 		    curIndex: 0
-//     },
-//     onLoad: function() {
-
-//         var that = this
-        
-//         my.request({
-//             url: '',
-//             method: 'GET',
-//             data: {},
-//             header: {
-//                 'Accept': 'application/json'
-//             },
-//             success: function(res) {
-//                 that.setData({
-//                     navLeftItems: res.data,
-//                     navRightItems: res.data
-//                 })
-//             }
-//         })
-//     },
-
-//     //事件处理函数
-//     switchRightTab: function(e) {
-//         let id = e.target.dataset.id,
-// 			index = parseInt(e.target.dataset.index);
-// 		this.setData({
-// 			curNav: id,
-// 			curIndex: index
-// 		})
-//     }
-
-// })
